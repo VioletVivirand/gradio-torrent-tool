@@ -32,7 +32,7 @@ def torrent_to_magent(filepaths):
 demo = gr.Interface(
     fn=torrent_to_magent,
     inputs=gr.File(label="Upload .torrent file", file_count="multiple", file_types=[".torrent"]),
-    outputs=[gr.Textbox(label="Magnet Link", show_copy_button=True, max_lines=10,)],
+    outputs=[gr.Textbox(label="Magnet Link", show_copy_button=True, lines=5, max_lines=10, interactive=True,)],
     title="Torrent to Magnet Link Converter",
     flagging_mode="never",
 )

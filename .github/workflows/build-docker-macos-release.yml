@@ -9,6 +9,7 @@ jobs:
   build-and-push:
     name: Build and Push Docker Image
 
+    # [TODO] This is public repo, use arm-based OS?
     runs-on: ubuntu-24.04
 
     steps:
